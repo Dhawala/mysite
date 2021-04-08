@@ -1,0 +1,396 @@
+body
+{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	background-color:#f5f5f5;
+	overflow: auto;
+}
+
+.Page-01
+{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	background:url(../img/bg.jpg);
+	background-size:cover;
+}
+
+.Login
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:400px;
+	padding:40px;
+	background:rgba(0,0,0,.7);
+	box-sizing:border-box;
+	box-shadow:0 15px 25px rgba(0,0,0,.5);
+	border-radius:10px;
+}
+
+.Login h2
+{
+	margin:0 0 30px;
+	padding:0;
+	color:#fff;
+	text-align:center;
+}
+
+.Login .InputBox
+{
+	position:relative;
+}
+
+.Login .InputBox input
+{
+	width:100%;
+	padding:10px 0;
+	font-size:16px;
+	color:#fff;
+	letter-spacing:1px;
+	margin-bottom:30px;
+	border:none;
+	border-bottom:1px solid #fff;
+	outline:none;
+	background:transparent;
+}
+
+.Login .InputBox label
+{
+	position:absolute;
+	top:0;
+	left:0;
+	padding:10px 0;
+	font-size:16px;
+	color:#fff;
+	letter-spacing:1px;
+	pointer-events:none;
+	transition: .5s;
+}
+
+.Login .InputBox input:focus ~ label,
+.Login .InputBox input:valid ~ label
+{
+	 top: -20px;
+	 left:0;
+	 color:#00da6b;
+	 font-size:12px;
+}
+
+.Login input[type="submit"]
+{
+	width:100%;
+	background:transparent;
+	border:none;
+	outline:none;
+	color:#fff;
+	font-size:16px;
+	border:2px solid #fff;
+	padding:10px 20px;
+	cursor:pointer;
+	border-radius:50px;
+}
+
+.Login input[type="submit"]:hover 
+{
+	border:2px solid #00fa4b;
+}
+
+.Login input[type="submit"]:focus
+{
+	border:2px solid #00da2b;
+}
+
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height:60px;
+	background-color: Black;
+	display: block;
+}
+
+.bottom-bar {
+	position: relative;
+	bottom: 30;
+	width: 100%;
+	height:30px;
+	background-color: #DFDFDF;
+	color: #696969;
+	text-align: center;
+	line-height: 30px;
+	font-style:italic;
+}
+
+.trademark
+{
+	bottom: 0;
+	width: 100%;
+	color: white;
+	text-align: center;
+	line-height: 5px;
+	font-size: 17px;
+}
+/* Add a black background color to the top navigation */
+.topnav 
+{	
+	background-color: #333;
+	overflow: hidden; 
+	padding-left:50px;
+	padding-right:50px;
+}
+/* Style the links inside the navigation bar */
+.topnav a 
+{
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover
+{
+	background-color: #ddd;
+	color: black;
+}
+/* Add a color to the active/current link */
+.topnav a.active 
+{
+	background-color: #4CAF50;
+	color: white;
+}
+
+.topnav-right 
+{
+	float: right;
+}
+
+.logged-user
+{
+	width: 100%;
+	color: #696969;
+	text-align: right;
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+
+#logged
+{
+	padding-right:5%;
+}
+
+.alert-success
+{	
+	line-height:40px;
+	color:#27633c;
+	background-color:#dbf2e3;
+	border-color:#cdedd8;
+	text-align: center;
+}
+
+.alert-danger
+{
+	line-height:40px;
+	color:#712b29;
+	background-color:#f7dddc;
+	border-color:#f4cfce;
+	text-align: center;
+}
+
+.alert-info
+{
+	line-height:40px;
+	color:#10516c;
+	background-color:#d2ebf5;
+	border-color:#c0e3f2;
+	text-align: center;
+}
+
+.btn-info
+{
+	padding: 10px 25px;
+	text-align: center;
+	display: inline-block;	
+	color:#fff;
+	background-color:#1F9BCF;
+	border-color:#1F9BCF;
+	appearance: button;
+	text-decoration: none;
+	border-radius: 50px;
+}
+	
+.btn-info:hover
+{
+	color:#fff;
+	background-color:#1a82ae;
+	border-color:#187aa3;
+}
+
+.btn-info:focus,.btn-info.focus
+{
+	color:#fff;
+	background-color:#1a82ae;
+	border-color:#187aa3;
+	-webkit-box-shadow:0 0 0 0.2rem rgba(65,170,214,0.5);
+	box-shadow:0 0 0 0.2rem rgba(65,170,214,0.5);
+}
+
+.btn-danger
+{
+	padding: 10px 25px;
+	text-align: center;
+	display: inline-block;
+	color:#fff;
+	background-color:#d9534f;
+	border-color:#d9534f;
+	appearance: button;
+	text-decoration: none;
+	border-radius: 25px;
+}
+
+.btn-danger:hover
+{
+	color:#fff;
+	background-color:#d23430;
+	border-color:#c9302c;
+}
+	
+.btn-danger:focus,.btn-danger.focus
+{
+	color:#fff;
+	background-color:#d23430;
+	border-color:#c9302c;
+	-webkit-box-shadow:0 0 0 0.2rem rgba(223,109,105,0.5);
+	box-shadow:0 0 0 0.2rem rgba(223,109,105,0.5);
+}
+
+.Container
+{
+	min-height:60%;
+	width:98%;
+	padding-top:20px;
+	padding-right:10px;
+	padding-left:10px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+table 
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.Student-Table
+{
+	width: 40%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:120px;
+}
+.action
+{
+	width:180px;
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+th, td 
+{
+	text-align: left;
+	padding: 5px;
+}
+
+tr:nth-child(even) 
+{
+	background-color: #f2f2f2;
+}
+
+.AddUser,
+.AddMarks
+{
+	width:100%;
+	margin-top:40px;
+	margin-bottom:100px;
+	margin-left:0%;
+	margin-right:0%;
+	box-sizing:border-box;
+	border:1px solid white;
+	display:inline-block;
+}
+
+.InputBox
+{
+	margin: auto;
+	width: 90%;
+	padding: 8px;
+}
+
+.AddUser label,
+.AddMarks label
+{
+	display: inline-block;
+	margin-left:10%;
+	width:15%;
+}
+
+.TextBox
+{
+	margin-left:0%;
+	width:65%;	
+}
+
+.AddUser h2,
+.AddMarks h2,
+.Container h2
+{
+	text-align:center;
+}
+
+.Welcome,
+.Welcome h2,
+.Welcome span
+{
+	margin-bottom:50px;
+	text-align:center;
+}
+
+.RadGroup
+{
+	width: 65%;
+	margin-left:25%;
+}
+
+.AddUser input[type="radio"]
+{
+	width:10%;
+}
+.AddUser input[type="submit"],
+.AddMarks input[type="submit"]
+{
+	width:100px;
+	background:#4CAF50;
+	border:none;
+	outline:none;
+	color:#fff;
+	font-size:16px;
+	padding:10px 20px;
+	cursor:pointer;
+	border-radius:50px;
+	position:relative;
+	margin-left:43%;
+	margin-right:auto;
+}
+
+#Marks-Submit
+{
+	margin-left:79%;
+}
